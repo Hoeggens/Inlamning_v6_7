@@ -1,0 +1,38 @@
+Skapar databasen 'products'
+
+CREATE DATABASE products;
+
+USE products;
+
+
+Skapar tabellen(kanske inte så bra att ha samma namn på båda)
+
+CREATE TABLE products (
+    id INT NOT NULL PRIMARY KEY,
+    name VARCHAR(255),
+    articleNumber VARCHAR(50),
+    price DECIMAL(10,2),
+    description TEXT
+);
+
+
+
+
+Skapar databasen 'shop'
+
+CREATE DATABASE shop;
+
+USE shop;
+
+
+Skapar tabellen
+
+CREATE TABLE orders (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    product_id INT NOT NULL,
+    quantity INT NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    totalAmount DECIMAL(10,2) NOT NULL,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    order_id INT NOT NULL
+);
