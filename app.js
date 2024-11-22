@@ -20,25 +20,25 @@ const dbOrders = mysql.createConnection({
     host: 'localhost',
     user: 'user',
     password: '1234',
-    database: 'shop',
+    database: 'orders',
 });
 
 dbProducts.connect(error => {
         if(error)
         {
-        console.error("Error connecting to MySQLLLLLL products", error);
+        console.error("Error connecting to MySQL products", error);
         }
         else
-        console.log("Connected to MySQL");
+        console.log("Connected to MySQL products");
     }
 )
 dbOrders.connect(error => {
     if(error)
     {
-    console.error("Error connecting to MySQLLLL shöpp", error);
+    console.error("Error connecting to MySQL orders", error);
     }
     else
-    console.log("Connected to MySQL");
+    console.log("Connected to MySQL orders");
 }
 )
 

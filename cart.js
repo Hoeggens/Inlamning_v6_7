@@ -11,7 +11,7 @@ function displayCart() {
         return;
     }
 
-    cart.forEach(item => {
+cart.forEach(item => {
         let cartItemDiv = document.createElement('div');
         cartItemDiv.classList.add('cart-item');
 
